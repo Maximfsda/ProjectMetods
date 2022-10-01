@@ -1,5 +1,5 @@
 package TaskTwo;
-
+//import java.time.LocalDate;
 import java.util.Scanner;
 
 public class TaskTwo {
@@ -9,9 +9,11 @@ public class TaskTwo {
         int type = in.nextInt();
         System.out.print("Введите год выпуска устройства : ");
         int year = in.nextInt();
-        CheckWhetherTheYearLeap(type, year);
+        phoneVersionDetection(type, year);
+//        int currentYear = LocalDate.now().getYear();
+//        System.out.println(currentYear);
     }
-    public static int CheckWhetherTheYearLeap(int type, int year ){
+    public static int phoneVersionDetection(int type, int year ){
         int clientOS = type;
         int clientDeviceYear = year;
         if (clientOS == 0 && clientDeviceYear > 2015) {
