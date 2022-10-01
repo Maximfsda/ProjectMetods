@@ -20,5 +20,4 @@ public class TaskOne {
         int year = in.nextInt();
         CheckWhetherTheYearLeap(year);
     }
-
 }
