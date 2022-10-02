@@ -1,10 +1,9 @@
 package TaskOne;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class TaskOne {
-    public static int checkWhetherTheYearLeap(int years) {
-        int year = years;
+    public static int checkWhetherTheYearLeap(int year) {
         if ((year % 4 == 0) && year % 100 != 0) {
             System.out.println(year + " — високосный год.");
         } else if ((year % 4 == 0) && (year % 100 == 0) && (year % 400 == 0)) {
@@ -19,5 +18,6 @@ public class TaskOne {
         System.out.print("Введите год : ");
         int year = in.nextInt();
         checkWhetherTheYearLeap(year);
+        in.close();
     }
 }
